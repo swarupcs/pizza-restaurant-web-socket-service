@@ -11,6 +11,7 @@ io.on("connection", (socket) => {
 
   socket.on("join", (data) => {
     socket.join(String(data.tenantId));
+
     socket.emit("join", { roomId: String(data.tenantId) });
   });
 });
