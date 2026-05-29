@@ -1,0 +1,13 @@
+# WS Service - Development Configuration
+# Loaded automatically by the 'config' npm package when NODE_ENV=development
+
+server:
+  port: 5504
+
+kafka:
+  broker:
+    - "localhost:9092"
+
+frontend:
+  clientUI: "http://localhost:5173"
+  adminUI: "http://localhost:5174"

@@ -1,0 +1,17 @@
+# WS Service - Environment Variable Mappings
+# Maps config keys to environment variable names for runtime overrides.
+
+server:
+  port: "PORT"
+
+kafka:
+  broker:
+    __name: "KAFKA_BROKER"
+    __format: "json"
+  sasl:
+    username: "KAFKA_SASL_USERNAME"
+    password: "KAFKA_SASL_PASSWORD"
+
+frontend:
+  clientUI: "CLIENT_UI_DOMAIN"
+  adminUI: "ADMIN_UI_DOMAIN"
